@@ -28,6 +28,8 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
+
+           
             //dependency injektion
             var result = _productService.GetAll();
             if (result.Success)
